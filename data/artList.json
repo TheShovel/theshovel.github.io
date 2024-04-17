@@ -1,0 +1,14 @@
+[
+    {"id":"back","link":"data/gameList.json","internal":true},
+    {"id":"arts/punchpunch","link":"*data/^.png"},
+    {"id":"arts/seasons","link":"*data/^.png"},
+    {"id":"arts/doodle1","link":"*data/^.png"},
+    {"id":"arts/3dshovel","link":"https://twitter.com/ShovelDev/status/1643679179563573264"},
+    {"id":"arts/orbooncrack","link":"*data/^.png"},
+    {"id":"arts/pfthing","link":"*data/^.png"},
+    {"id":"arts/quib","link":"*data/^.png"},
+    {"id":"arts/scary1","link":"https://twitter.com/ShovelDev/status/1776282265468780788"},
+    {"id":"arts/scary2","link":"https://twitter.com/ShovelDev/status/1776382887085879775"},
+    {"id":"arts/namelesspfp","link":"*data/^.png"},
+    {"id":"arts/shovelpfp","link":"*data/^.png"}
+]

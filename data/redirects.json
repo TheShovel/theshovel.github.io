@@ -1,0 +1,6 @@
+ {
+    "art":"data/artList.json",
+    "data/artList.json":"art",
+    "games":"data/gameList.json",
+    "data/gameList.json":"games"
+ }

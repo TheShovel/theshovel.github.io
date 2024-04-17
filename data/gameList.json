@@ -1,4 +1,5 @@
 [
+    {"id":"artPage","link":"data/artList.json","internal":true},
     {"id":"pf","link":"https://theshovel.github.io/penguin-funk/","mobile":true},
     {"id":"lzyc","link":"https://theshovel.github.io/the-lazy-cook/","mobile":false},
     {"id":"infp","link":"https://theshovel.github.io/infinite-penguin/","mobile":true},
