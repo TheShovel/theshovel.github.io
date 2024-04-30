@@ -1,6 +1,7 @@
 [
     {"id":"back","link":"data/gameList.json","internal":true},
     {"id":"arts/punchpunch","link":"*data/^.png"},
+    {"id":"arts/weblart","link":"https://twitter.com/worldsprites/status/1784987014464426116"},
     {"id":"arts/seasons","link":"*data/^.png"},
     {"id":"arts/doodle1","link":"*data/^.png"},
     {"id":"arts/spidermantest","link":"https://www.youtube.com/watch?v=sagsRfhqBa4"},
