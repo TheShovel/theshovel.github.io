@@ -2,7 +2,6 @@
     {"id":"artPage","link":"data/artList.json","internal":true},
     {"id":"pf","link":"https://theshovel.github.io/penguin-funk/","mobile":true},
     {"id":"lzyc","link":"https://theshovel.github.io/the-lazy-cook/","mobile":false},
-    {"id":"infp","link":"https://theshovel.github.io/infinite-penguin/","mobile":true},
     {"id":"frog","link":"https://theshovel.rocks/Frogeon/","mobile":true},
     {"id":"dungeon","link":"https://theshovel.rocks/dont-kill-the-dungeon/","mobile":true},
     {"id":"pengr","link":"https://theshovel.github.io/snowball-roulette/","mobile":true},
