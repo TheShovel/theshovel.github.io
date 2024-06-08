@@ -1,5 +1,5 @@
 [
-    {"id":"back","link":"data/gameList.json","internal":true},
+    {"id":"back","link":"data/gameList.json","internal":true,"staticThumb":true},
     {"id":"arts/punchpunch","link":"*data/^.png"},
     {"id":"arts/weblart","link":"https://twitter.com/worldsprites/status/1784987014464426116"},
     {"id":"arts/seasons","link":"*data/^.png"},

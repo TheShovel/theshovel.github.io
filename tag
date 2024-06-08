@@ -1,0 +1,1 @@
+<meta name="description" content="Nice website with Games, Art and other things made by TheShovel!!">

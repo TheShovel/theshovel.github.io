@@ -1,0 +1,4 @@
+[
+    {"id":"back","link":"data/gameList.json","internal":true,"staticThumb":true},
+    {"id":"comics/SSLissuesThumb","link":"*data/comics/SSLissues.png","staticThumb":true}
+]

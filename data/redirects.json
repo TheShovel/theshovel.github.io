@@ -2,5 +2,7 @@
     "art":"data/artList.json",
     "data/artList.json":"art",
     "games":"data/gameList.json",
-    "data/gameList.json":"games"
+    "data/gameList.json":"games",
+    "data/comicList.json":"comics",
+    "comics":"data/comicList.json"
  }
