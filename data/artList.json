@@ -1,10 +1,10 @@
 [
     {"id":"back","link":"data/gameList.json","internal":true,"staticThumb":true},
     {"id":"arts/punchpunch","link":"*data/^.png"},
+    {"id":"arts/gokuspaggeti","link":"*data/^.png"},
     {"id":"arts/weblart","link":"https://twitter.com/worldsprites/status/1784987014464426116"},
     {"id":"arts/seasons","link":"*data/^.png"},
     {"id":"arts/doodle1","link":"*data/^.png"},
-    {"id":"arts/spidermantest","link":"https://www.youtube.com/watch?v=sagsRfhqBa4"},
     {"id":"arts/3dshovel","link":"https://twitter.com/ShovelDev/status/1643679179563573264"},
     {"id":"arts/orbooncrack","link":"*data/^.png"},
     {"id":"arts/pfthing","link":"*data/^.png"},
@@ -15,5 +15,6 @@
     {"id":"arts/shovelpfp","link":"*data/^.png"},
     {"id":"arts/bombguy","link":"*data/^.png"},
     {"id":"arts/wizard","link":"*data/^.png"},
-    {"id":"arts/doodles","link":"*data/^.png"}
+    {"id":"arts/doodles","link":"*data/^.png"},
+    {"id":"arts/doodlesagain","link":"*data/^.png"}
 ]

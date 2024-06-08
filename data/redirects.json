@@ -1,8 +1,8 @@
  {
     "art":"data/artList.json",
     "data/artList.json":"art",
-    "games":"data/gameList.json",
-    "data/gameList.json":"games",
+    "home":"data/gameList.json",
+    "data/gameList.json":"home",
     "data/comicList.json":"comics",
     "comics":"data/comicList.json"
  }
