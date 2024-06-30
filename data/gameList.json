@@ -1,6 +1,6 @@
 [   {"id":"comicsPage","link":"data/comicList.json","internal":true,"staticThumb":true},
     {"id":"artPage","link":"data/artList.json","internal":true,"staticThumb":true},
-    {"id":"pf","link":"https://theshovel.github.io/penguin-funk/","mobile":true,"staticThumb":true},
+    {"id":"pf","link":"https://theshovel.github.io/co-funk/","mobile":true,"staticThumb":true},
     {"id":"lzyc","link":"https://theshovel.github.io/the-lazy-cook/","mobile":false,"staticThumb":true},
     {"id":"frog","link":"https://theshovel.rocks/Frogeon/","mobile":true,"staticThumb":true},
     {"id":"dungeon","link":"https://theshovel.rocks/dont-kill-the-dungeon/","mobile":true,"staticThumb":true},
