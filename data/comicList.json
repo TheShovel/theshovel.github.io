@@ -1,6 +1,5 @@
 [
     {"id":"back","link":"data/gameList.json","internal":true,"staticThumb":true},
     {"id":"comics/SSLissuesThumb","link":"*data/comics/SSLissues.png","staticThumb":true},
-    {"id":"comics/roombaThumb","link":"*data/comics/roomba.png","staticThumb":true},
-    {"id":"comics/hegonnatelThumb","link":"*data/comics/hegonnatell.png","staticThumb":true}
+    {"id":"comics/roombaThumb","link":"*data/comics/roomba.png","staticThumb":true}
 ]
