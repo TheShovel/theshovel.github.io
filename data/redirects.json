@@ -6,5 +6,5 @@
     "data/comicList.json":"comics",
     "comics":"data/comicList.json",
     "data/logList.json":"logs",
-    "theLogBook":"data/logList.json"
+    "logs":"data/logList.json"
  }
