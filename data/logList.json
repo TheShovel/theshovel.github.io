@@ -1,3 +1,13 @@
 [   
-    {"id":"back","link":"data/gameList.json","internal":true,"staticThumb":true}
+    {"id":"back","link":"data/gameList.json","internal":true,"staticThumb":true},
+    {"id":"weird dream in hell","link":"*data/logs/^.txt","staticThumb":true},
+    {"id":"scary school dream","link":"*data/logs/^.txt","staticThumb":true},
+    {"id":"afterlife gambling","link":"*data/logs/^.txt","staticThumb":true},
+    {"id":"getting lost dream","link":"*data/logs/^.txt","staticThumb":true},
+    {"id":"eiffel tower dream","link":"*data/logs/^.txt","staticThumb":true},
+    {"id":"sheep and goats fun fact","link":"*data/logs/^.txt","staticThumb":true},
+    {"id":"comforting dream","link":"*data/logs/^.txt","staticThumb":true},
+    {"id":"another dream about being lost","link":"*data/logs/^.txt","staticThumb":true},
+    {"id":"all dominant species go extinct","link":"*data/logs/^.txt","staticThumb":true}
+
 ]
