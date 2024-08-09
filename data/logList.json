@@ -11,6 +11,11 @@
     "staticThumb": true
   },
   {
+    "id": "thought about purpose",
+    "link": "*data/logs/^.txt",
+    "staticThumb": true
+  },
+  {
     "id": "scary school dream",
     "link": "*data/logs/^.txt",
     "staticThumb": true
