@@ -1,10 +1,61 @@
-[   {"id":"comicsPage","link":"data/comicList.json","internal":true,"staticThumb":true},
-    {"id":"artPage","link":"data/artList.json","internal":true,"staticThumb":true},
-    {"id":"theLogBook","link":"data/logList.json","internal":true,"staticThumb":true},
-    {"id":"pf","link":"https://theshovel.github.io/co-funk/","mobile":true,"staticThumb":true},
-    {"id":"lzyc","link":"https://theshovel.github.io/the-lazy-cook/","mobile":false,"staticThumb":true},
-    {"id":"frog","link":"https://theshovel.rocks/Frogeon/","mobile":true,"staticThumb":true},
-    {"id":"dungeon","link":"https://theshovel.rocks/dont-kill-the-dungeon/","mobile":true,"staticThumb":true},
-    {"id":"pengr","link":"https://theshovel.github.io/snowball-roulette/","mobile":true,"staticThumb":true},
-    {"id":"daciarng","link":"https://theshovel.rocks/dacia-rng/","mobile":true,"staticThumb":true}
+[
+  {
+    "id": "comicsPage",
+    "link": "data/comicList.json",
+    "internal": true,
+    "staticThumb": true
+  },
+  {
+    "id": "artPage",
+    "link": "data/artList.json",
+    "internal": true,
+    "staticThumb": true
+  },
+  {
+    "id": "theLogBook",
+    "link": "data/logList.json",
+    "internal": true,
+    "staticThumb": true
+  },
+  {
+    "id": "discordServer",
+    "link": "https://discord.gg/cEm3J6Ng24",
+    "staticThumb": true
+  },
+  {
+    "id": "pf",
+    "link": "https://theshovel.github.io/co-funk/",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
+    "id": "lzyc",
+    "link": "https://theshovel.github.io/the-lazy-cook/",
+    "mobile": false,
+    "staticThumb": true
+  },
+  {
+    "id": "frog",
+    "link": "https://theshovel.rocks/Frogeon/",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
+    "id": "dungeon",
+    "link": "https://theshovel.rocks/dont-kill-the-dungeon/",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
+    "id": "pengr",
+    "link": "https://theshovel.github.io/snowball-roulette/",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
+    "id": "daciarng",
+    "link": "https://theshovel.rocks/dacia-rng/",
+    "mobile": true,
+    "staticThumb": true
+  }
 ]
