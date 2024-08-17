@@ -18,19 +18,20 @@
     "staticThumb": true
   },
   {
-    "id": "discordServer",
-    "link": "https://discord.gg/cEm3J6Ng24",
+    "id": "bees",
+    "link": "https://theshovel.rocks/bees/",
+    "mobile": true,
     "staticThumb": true
   },
   {
     "id": "pf",
-    "link": "https://theshovel.github.io/co-funk/",
+    "link": "https://theshovel.rocks/co-funk/",
     "mobile": true,
     "staticThumb": true
   },
   {
     "id": "lzyc",
-    "link": "https://theshovel.github.io/the-lazy-cook/",
+    "link": "https://theshovel.rocks/the-lazy-cook/",
     "mobile": false,
     "staticThumb": true
   },
@@ -48,7 +49,7 @@
   },
   {
     "id": "pengr",
-    "link": "https://theshovel.github.io/snowball-roulette/",
+    "link": "https://theshovel.rocks/snowball-roulette/",
     "mobile": true,
     "staticThumb": true
   },
@@ -56,6 +57,11 @@
     "id": "daciarng",
     "link": "https://theshovel.rocks/dacia-rng/",
     "mobile": true,
+    "staticThumb": true
+  },
+  {
+    "id": "discordServer",
+    "link": "https://discord.gg/cEm3J6Ng24",
     "staticThumb": true
   }
 ]
