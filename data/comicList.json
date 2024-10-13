@@ -1,5 +1,23 @@
 [
-    {"id":"back","link":"data/gameList.json","internal":true,"staticThumb":true},
-    {"id":"comics/SSLissuesThumb","link":"*data/comics/SSLissues.png","staticThumb":true},
-    {"id":"comics/roombaThumb","link":"*data/comics/roomba.png","staticThumb":true}
+  {
+    "id": "back",
+    "link": "data/gameList.json",
+    "internal": true,
+    "staticThumb": true
+  },
+  {
+    "id": "comics/mymindiscomplicatedThumb",
+    "link": "*data/comics/mymindiscomplicated.png",
+    "staticThumb": true
+  },
+  {
+    "id": "comics/SSLissuesThumb",
+    "link": "*data/comics/SSLissues.png",
+    "staticThumb": true
+  },
+  {
+    "id": "comics/roombaThumb",
+    "link": "*data/comics/roomba.png",
+    "staticThumb": true
+  }
 ]
