@@ -11,6 +11,11 @@
     "staticThumb": true
   },
   {
+    "id": "comics/ihaveuglyhandsThumb",
+    "link": "*data/comics/ihaveuglyhands.png",
+    "staticThumb": true
+  },
+  {
     "id": "comics/SSLissuesThumb",
     "link": "*data/comics/SSLissues.png",
     "staticThumb": true
