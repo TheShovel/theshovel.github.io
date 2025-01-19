@@ -18,6 +18,12 @@
     "staticThumb": true
   },
   {
+    "id": "frog",
+    "link": "https://theshovel.rocks/Frogeon/",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
     "id": "bees",
     "link": "https://theshovel.rocks/bees/",
     "mobile": true,
@@ -33,12 +39,6 @@
     "id": "lzyc",
     "link": "https://theshovel.rocks/the-lazy-cook/",
     "mobile": false,
-    "staticThumb": true
-  },
-  {
-    "id": "frog",
-    "link": "https://theshovel.rocks/Frogeon/",
-    "mobile": true,
     "staticThumb": true
   },
   {
