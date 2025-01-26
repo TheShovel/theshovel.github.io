@@ -6,6 +6,11 @@
     "staticThumb": true
   },
   {
+    "id": "comics/frogeoncomic2Thumb",
+    "link": "*data/comics/frogeoncomic2.png",
+    "staticThumb": true
+  },
+  {
     "id": "comics/frogeoncomic1Thumb",
     "link": "*data/comics/frogeoncomic1.png",
     "staticThumb": true
