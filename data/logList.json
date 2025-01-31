@@ -60,5 +60,10 @@
     "id": "discord kinda sucks",
     "link": "*data/logs/^.txt",
     "staticThumb": true
+  },
+  {
+    "id": "nothing feels real",
+    "link": "*data/logs/^.txt",
+    "staticThumb": true
   }
 ]
