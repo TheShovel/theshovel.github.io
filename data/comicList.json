@@ -6,6 +6,11 @@
     "staticThumb": true
   },
   {
+    "id": "comics/womensdayThumb",
+    "link": "*data/comics/womensday.png",
+    "staticThumb": true
+  },
+  {
     "id": "comics/frogeoncomic2Thumb",
     "link": "*data/comics/frogeoncomic2.png",
     "staticThumb": true
