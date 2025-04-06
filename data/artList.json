@@ -5,7 +5,6 @@
     "internal": true,
     "staticThumb": true
   },
-  { "id": "arts/hebroughtadeadrat", "link": "*data/^.png" },
   { "id": "arts/ozo", "link": "*data/^.png" },
   { "id": "arts/characters1", "link": "*data/^.png" },
   { "id": "arts/characterconcept", "link": "*data/^.png" },
@@ -18,6 +17,7 @@
   { "id": "arts/sillyGoober", "link": "*data/^.png" },
   { "id": "arts/punchpunch", "link": "*data/^.png" },
   { "id": "arts/manInTheWindow", "link": "*data/^.png" },
+  { "id": "arts/hebroughtadeadrat", "link": "*data/^.png" },
   { "id": "arts/gokuspaggeti", "link": "*data/^.png" },
   { "id": "arts/weblart", "link": "*data/^.png" },
   { "id": "arts/seasons", "link": "*data/^.png" },
