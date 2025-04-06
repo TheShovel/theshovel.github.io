@@ -5,6 +5,7 @@
     "internal": true,
     "staticThumb": true
   },
+  { "id": "arts/hebroughtadeadrat", "link": "*data/^.png" },
   { "id": "arts/ozo", "link": "*data/^.png" },
   { "id": "arts/characters1", "link": "*data/^.png" },
   { "id": "arts/characterconcept", "link": "*data/^.png" },
