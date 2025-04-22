@@ -1,10 +1,12 @@
- {
-    "art":"data/artList.json",
-    "data/artList.json":"art",
-    "home":"data/gameList.json",
-    "data/gameList.json":"home",
-    "data/comicList.json":"comics",
-    "comics":"data/comicList.json",
-    "data/logList.json":"logs",
-    "logs":"data/logList.json"
- }
+{
+  "art": "data/artList.json",
+  "data/artList.json": "art",
+  "home": "data/gameList.json",
+  "data/gameList.json": "home",
+  "data/comicList.json": "comics",
+  "comics": "data/comicList.json",
+  "data/logList.json": "logs",
+  "logs": "data/logList.json",
+  "data/discord-archiv.json": "discord-archive",
+  "discord-archive": "data/discord-archiv.json"
+}

@@ -67,7 +67,8 @@
   },
   {
     "id": "discordServer",
-    "link": "https://discord.gg/cEm3J6Ng24",
-    "staticThumb": true
+    "link": "data/discord-archiv.json",
+    "staticThumb": true,
+    "internal": true
   }
 ]

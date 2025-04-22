@@ -1,0 +1,83 @@
+[
+  {
+    "id": "back",
+    "link": "data/gameList.json",
+    "internal": true,
+    "staticThumb": true
+  },
+  {
+    "id": "ARCHIVE-INFO",
+    "link": "discord-archive/arch-info.html",
+    "staticThumb": true
+  },
+  {
+    "id": "rules",
+    "link": "discord-archive/TheShovel.rocks%20-%20Important%20-%20rules%20%5B1251633179601666108%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "welcome",
+    "link": "discord-archive/TheShovel.rocks%20-%20Important%20-%20welcome%20%5B1251662087072256065%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "announcements",
+    "link": "discord-archive/TheShovel.rocks%20-%20Important%20-%20announcements%20%5B1272823641553502208%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "resources",
+    "link": "discord-archive/TheShovel.rocks%20-%20Important%20-%20resources%20%5B1251642637149012098%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "general",
+    "link": "discord-archive/TheShovel.rocks%20-%20Channels%20-%20general%20%5B1251632861019115614%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "media",
+    "link": "discord-archive/TheShovel.rocks%20-%20Channels%20-%20media%20%5B1251633477602771035%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "balls",
+    "link": "discord-archive/TheShovel.rocks%20-%20Channels%20-%20balls%20%5B1291876910124761128%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "daycare-for-lame-children",
+    "link": "discord-archive/TheShovel.rocks%20-%20Channels%20-%20daycare-for-lame-children%20%5B1364249634163265568%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "volunteer-announcements",
+    "link": "discord-archive/TheShovel.rocks%20-%20ws%20volunteer%20-%20volunteer-announcements%20%5B1345255849127448608%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "volunteer-chat",
+    "link": "discord-archive/TheShovel.rocks%20-%20ws%20volunteer%20-%20volunteer-chat%20%5B1345255678775918712%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "volunteer-assets",
+    "link": "discord-archive/TheShovel.rocks%20-%20ws%20volunteer%20-%20volunteer-assets%20%5B1345870563654238290%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "admin-chatterino",
+    "link": "discord-archive/TheShovel.rocks%20-%20Admin%20stuff%20-%20admin-chatterino%20%5B1251641040675536977%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "bees-updates-archive",
+    "link": "discord-archive/TheShovel.rocks%20-%20archive%20-%20bees-updates-archive%20%5B1275183517747253349%5D.html",
+    "staticThumb": true
+  },
+  {
+    "id": "cofunk-updates-archive",
+    "link": "discord-archive/TheShovel.rocks%20-%20archive%20-%20cofunk-updates-archive%20%5B1251633201026302074%5D.html",
+    "staticThumb": true
+  }
+]

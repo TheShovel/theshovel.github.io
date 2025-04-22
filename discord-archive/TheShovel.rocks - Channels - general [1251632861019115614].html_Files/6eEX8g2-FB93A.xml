@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Nene_assets.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Nene Abot Idle0000" x="0" y="0" width="812" height="662" frameX="-3" frameY="-7" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0001" x="812" y="0" width="815" height="662" frameX="0" frameY="-7" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0002" x="1627" y="0" width="815" height="663" frameX="0" frameY="-6" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0003" x="2442" y="0" width="812" height="663" frameX="-3" frameY="-6" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0004" x="3254" y="0" width="812" height="664" frameX="-3" frameY="-5" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0005" x="0" y="664" width="812" height="664" frameX="-3" frameY="-5" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0006" x="812" y="664" width="812" height="666" frameX="-3" frameY="-3" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0007" x="1624" y="664" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0008" x="2436" y="664" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0009" x="3248" y="664" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0010" x="0" y="1333" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0011" x="0" y="1333" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0012" x="812" y="1333" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0013" x="1624" y="1333" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0014" x="2436" y="1333" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0015" x="3248" y="1333" width="812" height="651" frameX="-3" frameY="-18" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0016" x="0" y="2002" width="812" height="651" frameX="-3" frameY="-18" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0017" x="812" y="2002" width="815" height="651" frameX="0" frameY="-18" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0018" x="812" y="2002" width="815" height="651" frameX="0" frameY="-18" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0019" x="1627" y="2002" width="812" height="652" frameX="-3" frameY="-17" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0020" x="2439" y="2002" width="812" height="652" frameX="-3" frameY="-17" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0021" x="3251" y="2002" width="812" height="655" frameX="-3" frameY="-14" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0022" x="0" y="2657" width="812" height="668" frameX="-3" frameY="-1" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0023" x="812" y="2657" width="812" height="668" frameX="-3" frameY="-1" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0024" x="1624" y="2657" width="812" height="668" frameX="-3" frameY="-1" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0025" x="2436" y="2657" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0026" x="2436" y="2657" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0027" x="3248" y="2657" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0028" x="0" y="3326" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+	<SubTexture name="Nene Abot Idle0029" x="812" y="3326" width="812" height="669" frameX="-3" frameY="0" frameWidth="815" frameHeight="669"/>
+</TextureAtlas>
