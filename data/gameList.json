@@ -60,6 +60,12 @@
     "staticThumb": true
   },
   {
+    "id": "sadgame",
+    "link": "https://theshovel.rocks/sad-game/",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
     "id": "discordServer",
     "link": "https://discord.gg/cEm3J6Ng24",
     "staticThumb": true
