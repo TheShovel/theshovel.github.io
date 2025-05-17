@@ -18,12 +18,6 @@
     "staticThumb": true
   },
   {
-    "id": "frog",
-    "link": "https://theshovel.rocks/Frogeon/",
-    "mobile": true,
-    "staticThumb": true
-  },
-  {
     "id": "bees",
     "link": "https://theshovel.rocks/bees/",
     "mobile": true,
@@ -36,6 +30,12 @@
     "staticThumb": true
   },
   {
+    "id": "frog",
+    "link": "https://theshovel.rocks/Frogeon/",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
     "id": "lzyc",
     "link": "https://theshovel.rocks/the-lazy-cook/",
     "mobile": false,
@@ -44,6 +44,12 @@
   {
     "id": "dungeon",
     "link": "https://theshovel.rocks/dont-kill-the-dungeon/",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
+    "id": "gasa2m",
+    "link": "https://theshovel.rocks/gasa2m/",
     "mobile": true,
     "staticThumb": true
   },
