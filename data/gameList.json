@@ -18,6 +18,16 @@
     "staticThumb": true
   },
   {
+    "id": "github",
+    "link": "https://github.com/TheShovel",
+    "staticThumb": true
+  },
+  {
+    "id": "bsky",
+    "link": "https://bsky.app/profile/theshovel.rocks",
+    "staticThumb": true
+  },
+  {
     "id": "bees",
     "link": "https://theshovel.rocks/bees/",
     "mobile": true,
