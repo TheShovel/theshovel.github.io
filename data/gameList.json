@@ -80,11 +80,5 @@
     "link": "https://theshovel.rocks/sad-game/",
     "mobile": true,
     "staticThumb": true
-  },
-  {
-    "id": "discordServer",
-    "link": "data/discord-archiv.json",
-    "staticThumb": true,
-    "internal": true
   }
 ]
