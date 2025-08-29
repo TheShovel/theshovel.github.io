@@ -5,6 +5,11 @@
     "internal": true,
     "staticThumb": true
   },
+    {
+    "id": "comics/nooneisevilThumb",
+    "link": "*data/comics/nooneisevil.png",
+    "staticThumb": true
+  },
   {
     "id": "comics/womensdayThumb",
     "link": "*data/comics/womensday.png",
