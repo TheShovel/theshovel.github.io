@@ -5,10 +5,11 @@
     "internal": true,
     "staticThumb": true
   },
-    {
+  {
     "id": "comics/nooneisevilThumb",
     "link": "*data/comics/nooneisevil.png",
-    "staticThumb": true
+    "staticThumb": true,
+    "creationDate": "2025-08-30 00:00:00"
   },
   {
     "id": "comics/womensdayThumb",

@@ -3,17 +3,12 @@
     "id": "comicsPage",
     "link": "data/comicList.json",
     "internal": true,
-    "staticThumb": true
+    "staticThumb": true,
+    "creationDate": "2025-08-30 00:00:00"
   },
   {
     "id": "artPage",
     "link": "data/artList.json",
-    "internal": true,
-    "staticThumb": true
-  },
-  {
-    "id": "theLogBook",
-    "link": "data/logList.json",
     "internal": true,
     "staticThumb": true
   },
@@ -32,6 +27,27 @@
     "link": "https://theshovel.rocks/bees/",
     "mobile": true,
     "staticThumb": true
+  },
+  {
+    "id": "garden",
+    "link": "https://theshovel.rocks/the-garden/",
+    "mobile": true,
+    "staticThumb": true,
+    "creationDate": "2025-08-30 00:00:00"
+  },
+  {
+    "id": "shavingsim",
+    "link": "https://theshovel.rocks/shaving-simulator/",
+    "mobile": true,
+    "staticThumb": true,
+    "creationDate": "2025-08-30 00:00:00"
+  },
+  {
+    "id": "fishing",
+    "link": "https://theshovel.rocks/bricks-fishing/",
+    "mobile": true,
+    "staticThumb": true,
+    "creationDate": "2025-08-30 00:00:00"
   },
   {
     "id": "pf",
@@ -79,6 +95,12 @@
     "id": "sadgame",
     "link": "https://theshovel.rocks/sad-game/",
     "mobile": true,
+    "staticThumb": true
+  },
+  {
+    "id": "theLogBook",
+    "link": "data/logList.json",
+    "internal": true,
     "staticThumb": true
   }
 ]
