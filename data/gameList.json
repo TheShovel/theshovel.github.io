@@ -15,12 +15,14 @@
   {
     "id": "github",
     "link": "https://github.com/TheShovel",
-    "staticThumb": true
+    "staticThumb": true,
+    "mobile": true
   },
   {
     "id": "bsky",
     "link": "https://bsky.app/profile/theshovel.rocks",
-    "staticThumb": true
+    "staticThumb": true,
+    "mobile": true
   },
   {
     "id": "bees",
@@ -31,14 +33,12 @@
   {
     "id": "garden",
     "link": "https://theshovel.rocks/the-garden/",
-    "mobile": true,
     "staticThumb": true,
     "creationDate": "2025-08-30 00:00:00"
   },
   {
     "id": "shavingsim",
     "link": "https://theshovel.rocks/shaving-simulator/",
-    "mobile": true,
     "staticThumb": true,
     "creationDate": "2025-08-30 00:00:00"
   },
@@ -76,7 +76,6 @@
   {
     "id": "gasa2m",
     "link": "https://theshovel.rocks/gasa2m/",
-    "mobile": true,
     "staticThumb": true
   },
   {
