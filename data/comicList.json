@@ -6,6 +6,12 @@
     "staticThumb": true
   },
   {
+    "id": "comics/whoareyouThumb",
+    "link": "*data/comics/whoareyou.png",
+    "staticThumb": true,
+    "creationDate": "2025-09-06 00:00:00"
+  },
+  {
     "id": "comics/nooneisevilThumb",
     "link": "*data/comics/nooneisevil.png",
     "staticThumb": true,
