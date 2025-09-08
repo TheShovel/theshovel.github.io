@@ -5,7 +5,31 @@
     "internal": true,
     "staticThumb": true
   },
-
+  {
+    "id": "arts/underbed",
+    "link": "*data/^.png",
+    "creationDate": "2025-09-08 00:00:00"
+  },
+  {
+    "id": "arts/wall",
+    "link": "*data/^.png",
+    "creationDate": "2025-09-08 00:00:00"
+  },
+  {
+    "id": "arts/happy",
+    "link": "*data/^.png",
+    "creationDate": "2025-09-08 00:00:00"
+  },
+  {
+    "id": "arts/desk",
+    "link": "*data/^.png",
+    "creationDate": "2025-09-08 00:00:00"
+  },
+  {
+    "id": "arts/backpack",
+    "link": "*data/^.png",
+    "creationDate": "2025-09-08 00:00:00"
+  },
   { "id": "arts/bopi", "link": "*data/^.png" },
   { "id": "arts/spritesfunk", "link": "*data/^.png" },
   { "id": "arts/jshuman", "link": "*data/^.png" },
