@@ -6,6 +6,12 @@
     "staticThumb": true
   },
   {
+    "id": "comics/mycurseThumb",
+    "link": "*data/comics/mycurse.png",
+    "staticThumb": true,
+    "creationDate": "2025-09-23 00:00:00"
+  },
+  {
     "id": "comics/whoareyouThumb",
     "link": "*data/comics/whoareyou.png",
     "staticThumb": true,
