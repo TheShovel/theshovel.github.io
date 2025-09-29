@@ -6,6 +6,12 @@
     "staticThumb": true
   },
   {
+    "id": "this is my home",
+    "link": "*data/logs/^.txt",
+    "staticThumb": true,
+    "creationDate": "2025-09-29 00:00:00"
+  },
+  {
     "id": "weird dream in hell",
     "link": "*data/logs/^.txt",
     "staticThumb": true
