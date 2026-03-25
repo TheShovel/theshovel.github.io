@@ -31,12 +31,14 @@
   {
     "id": "comics/frogeoncomic2Thumb",
     "link": "*data/comics/frogeoncomic2.png",
-    "staticThumb": true
+    "staticThumb": true,
+    "patreon": "https://www.patreon.com/posts/krita-files-for-140198402"
   },
   {
     "id": "comics/frogeoncomic1Thumb",
     "link": "*data/comics/frogeoncomic1.png",
-    "staticThumb": true
+    "staticThumb": true,
+    "patreon": "https://www.patreon.com/posts/krita-files-for-140198402"
   },
   {
     "id": "comics/idkwhatthisisThumb",
@@ -56,11 +58,13 @@
   {
     "id": "comics/SSLissuesThumb",
     "link": "*data/comics/SSLissues.png",
-    "staticThumb": true
+    "staticThumb": true,
+    "patreon": "https://www.patreon.com/posts/krita-files-for-140199570"
   },
   {
     "id": "comics/roombaThumb",
     "link": "*data/comics/roomba.png",
-    "staticThumb": true
+    "staticThumb": true,
+    "patreon": "https://www.patreon.com/posts/krita-files-for-140199570"
   }
 ]
