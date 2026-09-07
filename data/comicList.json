@@ -9,22 +9,19 @@
     "id": "comics/mycurseThumb",
     "link": "*data/comics/mycurse.png",
     "staticThumb": true,
-    "creationDate": "2025-09-23 00:00:00",
-    "patreon": "https://www.patreon.com/posts/sad-comics-krita-153915008"
+    "creationDate": "2025-09-23 00:00:00"
   },
   {
     "id": "comics/whoareyouThumb",
     "link": "*data/comics/whoareyou.png",
     "staticThumb": true,
-    "creationDate": "2025-09-06 00:00:00",
-    "patreon": "https://www.patreon.com/posts/sad-comics-krita-153915008"
+    "creationDate": "2025-09-06 00:00:00"
   },
   {
     "id": "comics/nooneisevilThumb",
     "link": "*data/comics/nooneisevil.png",
     "staticThumb": true,
-    "creationDate": "2025-08-30 00:00:00",
-    "patreon": "https://www.patreon.com/posts/sad-comics-krita-153915008"
+    "creationDate": "2025-08-30 00:00:00"
   },
   {
     "id": "comics/womensdayThumb",
@@ -34,14 +31,12 @@
   {
     "id": "comics/frogeoncomic2Thumb",
     "link": "*data/comics/frogeoncomic2.png",
-    "staticThumb": true,
-    "patreon": "https://www.patreon.com/posts/krita-files-for-140198402"
+    "staticThumb": true
   },
   {
     "id": "comics/frogeoncomic1Thumb",
     "link": "*data/comics/frogeoncomic1.png",
-    "staticThumb": true,
-    "patreon": "https://www.patreon.com/posts/krita-files-for-140198402"
+    "staticThumb": true
   },
   {
     "id": "comics/idkwhatthisisThumb",
@@ -61,13 +56,11 @@
   {
     "id": "comics/SSLissuesThumb",
     "link": "*data/comics/SSLissues.png",
-    "staticThumb": true,
-    "patreon": "https://www.patreon.com/posts/krita-files-for-140199570"
+    "staticThumb": true
   },
   {
     "id": "comics/roombaThumb",
     "link": "*data/comics/roomba.png",
-    "staticThumb": true,
-    "patreon": "https://www.patreon.com/posts/krita-files-for-140199570"
+    "staticThumb": true
   }
 ]
