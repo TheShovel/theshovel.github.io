@@ -385,10 +385,18 @@
       closeViewer();
       renderCurrent();
     });
+    let lastSuffix = sizeSuffix();
     window.addEventListener("resize", () => {
-      // re-pick small/medium/full thumbs on resize (debounced, no transition)
+      // re-pick small/medium/full thumbs on resize (debounced, no transition).
+      // Guarded by suffix: mobile URL-bar hide/show fires resize on every
+      // scroll, and rebuilding the grid there looks like constant reflow.
       clearTimeout(window.__thumbT);
-      window.__thumbT = setTimeout(() => renderCurrent(true, false), 250);
+      window.__thumbT = setTimeout(() => {
+        const sfx = sizeSuffix();
+        if (sfx === lastSuffix) return;
+        lastSuffix = sfx;
+        renderCurrent(true, false);
+      }, 250);
     });
 
     bannerPrev.addEventListener("click", () => stepBanner(-1));
