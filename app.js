@@ -36,11 +36,25 @@
   };
 
   const thumbFor = (id) => {
+    // Art/comic previews never use the full-size original as a thumbnail:
+    // small on mobile, medium on PC.
+    if (id.startsWith("arts/") || id.startsWith("comics/")) {
+      return `data/${id}${isMobileDevice() ? "small" : "medium"}.png`;
+    }
     const sfx = sizeSuffix();
     // data/<id><suffix>.png, e.g. data/artPagemedium.png, data/arts/underbedsmall.png
     return `data/${id}${sfx}.png`;
   };
   const fullFor = (id) => `data/${id}.png`;
+  // Ordered fallback chain so a missing sized file still resolves
+  // (preferred size -> other size -> full original).
+  const thumbCandidates = (id) => {
+    const primary = thumbFor(id);
+    const rest = isMobileDevice()
+      ? [`data/${id}small.png`, `data/${id}medium.png`, fullFor(id)]
+      : [`data/${id}medium.png`, `data/${id}small.png`, fullFor(id)];
+    return [primary, ...rest.filter((c) => c !== primary)];
+  };
 
   let redirects = {};
   let banners = [];
@@ -630,12 +644,15 @@
     img.className = "thumb";
     img.alt = item.id;
     img.loading = "lazy";
-    const primary = thumbFor(item.id);
-    img.src = primary;
-    // fallback chain: suffix -> full -> nothing (then show text)
+    // fallback chain: preferred size -> other size -> full -> text card
+    const candidates = thumbCandidates(item.id);
+    let candIdx = 0;
+    img.src = candidates[candIdx];
     img.onerror = () => {
-      const full = fullFor(item.id);
-      if (img.src.endsWith(encodeURI(full)) || img.dataset.fbk) {
+      candIdx++;
+      if (candIdx < candidates.length) {
+        img.src = candidates[candIdx];
+      } else {
         // no image at all (e.g. log titles) -> convert to text card
         const text = logCard(item);
         text.style.setProperty(
@@ -643,9 +660,6 @@
           btn.style.getPropertyValue("--i") || 0
         );
         btn.replaceWith(text);
-      } else {
-        img.dataset.fbk = "1";
-        img.src = full;
       }
     };
 

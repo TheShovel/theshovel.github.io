@@ -1,7 +1,5 @@
 #!/bin/bash
 
-unzip -o site.pmp -d assets
-
 echo "Making small images..."
     create_resized_images() {
         find data/ -name "*.png" -type f \( -not -path "data/comics/*" -o -path "data/comics/*Thumb.png" \) | while read -r image; do
