@@ -394,6 +394,7 @@
     if (!banners.length) banners = [{ tex: "updatebanner.png", link: "updates/bannerupdate.html" }];
     renderBanner();
     startBannerAuto();
+    renderGoal();
 
     window.addEventListener("hashchange", () => {
       closeViewer();
@@ -534,7 +535,12 @@
     bannerImg.src = "banner/" + b.tex;
     bannerImg.alt = b.tex;
     bannerLink.href = b.link;
+    // banner clicks always open a new tab
+    bannerLink.target = "_blank";
+    bannerLink.rel = "noopener";
     bannerDots.innerHTML = "";
+    // a single dot for a single banner is just a blob over the art
+    bannerDots.style.display = banners.length > 1 ? "" : "none";
     banners.forEach((_, i) => {
       const d = document.createElement("i");
       if (i === bannerIndex % banners.length) d.className = "on";
@@ -559,6 +565,40 @@
   }
   function stopBannerAuto() {
     if (bannerTimer) clearInterval(bannerTimer);
+  }
+
+  /* ---------- ko-fi goal tracker (footer) ----------
+     Ko-fi sends no CORS headers, so the browser can't pull the goal
+     live. Numbers live in data/kofiGoal.json — update `raised` there
+     whenever a donation comes in. */
+  async function renderGoal() {
+    const card = document.getElementById("goal-card");
+    if (!card) return;
+    let g;
+    try {
+      g = await loadJSON("data/kofiGoal.json");
+    } catch {
+      return; // keep the card hidden
+    }
+    const raised = Number(g.raised) || 0;
+    const target = Number(g.target) || 0;
+    const cur = g.currency || "€";
+    const pct = target > 0 ? Math.min(100, (raised / target) * 100) : 0;
+    const pctLabel = (Math.round(pct * 10) / 10).toString().replace(/\.0$/, "");
+    const title = document.getElementById("goal-title");
+    const fill = document.getElementById("goal-fill");
+    const amounts = document.getElementById("goal-amounts");
+    const desc = document.getElementById("goal-desc");
+    if (title) title.textContent = g.title || "Goal";
+    if (fill) fill.style.width = pct + "%";
+    if (amounts)
+      amounts.textContent = `${cur}${raised} raised of ${cur}${target} goal · ${pctLabel}%`;
+    if (desc) desc.textContent = g.description || "";
+    const updated = document.getElementById("goal-updated");
+    if (updated) updated.textContent = g.updated ? `Updated ${g.updated}` : "";
+    const donate = document.getElementById("goal-donate");
+    if (donate && g.url) donate.href = g.url;
+    card.hidden = false;
   }
 
   /* ---------- main list rendering (staggered fade out/in) ---------- */

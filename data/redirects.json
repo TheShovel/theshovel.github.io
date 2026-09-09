@@ -8,5 +8,7 @@
   "data/logList.json": "logs",
   "logs": "data/logList.json",
   "data/discord-archiv.json": "discord-archive",
-  "discord-archive": "data/discord-archiv.json"
+  "discord-archive": "data/discord-archiv.json",
+  "data/certificateList.json": "certificates",
+  "certificates": "data/certificateList.json"
 }

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "back",
+    "link": "data/gameList.json",
+    "internal": true,
+    "staticThumb": true
+  },
+  {
+    "id": "certificates/stardance",
+    "link": "*data/^.png",
+    "creationDate": "2026-09-09 00:00:00"
+  },
+  {
+    "id": "certificates/cambridge",
+    "link": "*data/^.png",
+    "creationDate": "2026-09-09 00:00:00"
+  }
+]

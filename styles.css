@@ -97,7 +97,9 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 2% 11%;
+  /* fixed padding: just clears the prev/next arrows so the art gets
+     the full bar height on every screen size (% padding shrank it) */
+  padding: 2px clamp(30px, 8%, 52px);
 }
 
 #banner-img {
@@ -105,8 +107,8 @@ body {
   height: 100%;
   max-height: none;
   max-width: none;
-  aspect-ratio: 682 / 130;
   object-fit: contain;
+  object-position: center;
   display: block;
 }
 
@@ -608,18 +610,27 @@ body {
   margin: 0 auto 28px auto;
   padding: 0 28px 40px 28px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
   color: var(--muted);
   font-size: 22px;
-  text-align: center;
+  text-align: left;
+}
+#footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 #footer-head {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: min(430px, 85vw);
+  width: min(300px, 60vw);
   aspect-ratio: 612 / 431;
   height: auto;
   text-decoration: none;
@@ -644,12 +655,60 @@ body {
 #footer-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
-  text-align: center;
+  text-align: left;
 }
 #bottombar a { color: #fff; }
 #site-links { display: flex; gap: 12px; align-items: center; }
+
+/* ---------- ko-fi goal tracker ---------- */
+#goal-card {
+  flex: 0 1 430px;
+  min-width: 0;
+  background: linear-gradient(var(--bar-top), var(--bar-bottom));
+  border-radius: 12px;
+  box-shadow: 0 2px 0 rgba(0,0,0,.4);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.35;
+}
+#goal-card[hidden] { display: none; }
+#goal-title { font-weight: 700; font-size: 19px; }
+#goal-bar {
+  display: block;
+  height: 14px;
+  background: rgba(0,0,0,.45);
+  border-radius: 999px;
+  overflow: hidden;
+}
+#goal-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #ff9e9e, #ff5e5b);
+  border-radius: inherit;
+}
+#goal-amounts { font-weight: 700; }
+#goal-desc { font-size: 14px; color: var(--muted); }
+#goal-donate {
+  align-self: flex-start;
+  background: linear-gradient(90deg, #ff9e9e, #ff5e5b);
+  color: #282828 !important;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 6px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 2px 0 rgba(0,0,0,.4);
+}
+#goal-donate:hover { filter: brightness(1.08); }
+#goal-donate:active { transform: translateY(1px); box-shadow: none; }
+#goal-updated { font-size: 12px; color: var(--muted); opacity: .8; }
 
 @media (max-width: 640px) {
   #topbar { height: clamp(60px, 17vw, 72px); }
@@ -658,7 +717,17 @@ body {
   #grid { gap: 22px 16px; }
   .card { max-width: none; }
   .new-badge { width: 40px; height: 40px; }
-  #bottombar { padding: 0 14px 30px 14px; font-size: 19px; }
+  #bottombar {
+    padding: 0 14px 30px 14px;
+    font-size: 19px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #footer-left { align-items: center; }
+  #footer-links { align-items: center; text-align: center; }
+  #goal-card { flex-basis: auto; width: 100%; order: -1; }
+  #goal-donate { align-self: center; }
   #viewer-text {
     padding: 32px 20px 32px 52px;
     background-image:

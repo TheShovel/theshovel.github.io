@@ -1,1 +1,4 @@
-[{ "tex": "updatebanner.png", "link": "updates/rewrittenupdate.html" }]
+[
+  { "tex": "updatebanner.png", "link": "updates/rewrittenupdate.html" },
+  { "tex": "kofi.png", "link": "https://ko-fi.com/theshovel" }
+]

@@ -14,11 +14,11 @@
     "creationDate": "2025-09-08 00:00:00"
   },
   {
-    "id": "theLogBook",
-    "link": "data/logList.json",
+    "id": "certificatesPage",
+    "link": "data/certificateList.json",
     "internal": true,
     "staticThumb": true,
-    "creationDate": "2025-09-29 00:00:00"
+    "creationDate": "2026-09-09 00:00:00"
   },
   {
     "id": "github",
@@ -31,6 +31,24 @@
     "link": "https://bsky.app/profile/theshovel.rocks",
     "staticThumb": true,
     "mobile": true
+  },
+  {
+    "id": "irongingot",
+    "link": "https://theshovel.rocks/irongingot/",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
+    "id": "khuwari",
+    "link": "https://github.com/TheShovel/khuwari",
+    "mobile": true,
+    "staticThumb": true
+  },
+  {
+    "id": "icanhelp",
+    "link": "https://github.com/TheShovel/icanhelp",
+    "mobile": true,
+    "staticThumb": true
   },
   {
     "id": "bees",
@@ -103,5 +121,12 @@
     "link": "https://theshovel.rocks/sad-game/",
     "mobile": true,
     "staticThumb": true
+  },
+  {
+    "id": "theLogBook",
+    "link": "data/logList.json",
+    "internal": true,
+    "staticThumb": true,
+    "creationDate": "2025-09-29 00:00:00"
   }
 ]

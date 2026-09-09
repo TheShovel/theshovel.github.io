@@ -6,6 +6,16 @@
     "staticThumb": true
   },
   {
+    "id": "arts/sasa",
+    "link": "*data/^.png",
+    "creationDate": "2026-09-09 00:00:00"
+  },
+  {
+    "id": "arts/khuwari",
+    "link": "*data/^.png",
+    "creationDate": "2026-09-09 00:00:00"
+  },
+  {
     "id": "arts/underbed",
     "link": "*data/^.png",
     "creationDate": "2025-09-08 00:00:00"

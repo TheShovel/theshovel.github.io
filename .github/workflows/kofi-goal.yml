@@ -1,0 +1,35 @@
+name: Refresh Ko-fi goal
+
+# Ko-fi sends no CORS headers, so the static site can't pull the goal
+# live from browsers. This runs server-side on a schedule, scrapes the
+# public goal widget, and commits data/kofiGoal.json when it changes.
+
+on:
+  schedule:
+    - cron: "0 */12 * * *" # every 12 hours
+  workflow_dispatch: # manual "Run workflow" button
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Fetch Ko-fi goal
+        run: python3 scripts/fetch-kofi-goal.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- data/kofiGoal.json; then
+            echo "Goal unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/kofiGoal.json
+          git commit -m "update ko-fi goal ($(python3 -c "import json; d=json.load(open('data/kofiGoal.json')); print(f\"{d['currency']}{d['raised']} of {d['currency']}{d['target']}\")"))"
+          git push
