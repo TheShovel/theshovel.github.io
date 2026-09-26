@@ -58,6 +58,89 @@
 
   let redirects = {};
   let banners = [];
+  /* ---------- frogs (footer easter egg) ---------- */
+  const FROG_API = "https://frogs.media/api/random";
+  const FROG_TIMEOUT = 4000;
+  // frogs.media sends no Access-Control-Allow-Origin, so a direct fetch is
+  // blocked. Try it anyway (in case they add it), then two public CORS
+  // proxies, and only then fall back to picking a name locally. The images
+  // themselves load fine in <img>, which ignores CORS.
+  const FROG_FETCHERS = [
+    () => FROG_API,
+    () => "https://api.cors.lol/?url=" + encodeURIComponent(FROG_API),
+    () =>
+      "https://api.allorigins.win/raw?url=" + encodeURIComponent(FROG_API),
+  ];
+  // Name list copied from GET https://frogs.media/api/all (used only as fallback).
+  const FROG_NAMES = [
+    "frog", "moss", "apple", "spots", "happy", "froggers", "angry",
+    "wholesome", "plant", "berry", "smile", "wizard", "run", "king",
+    "rainbow", "orange", "bruh", "pink", "red", "sad", "smol", "royal",
+    "cowboy", "witch", "teacup", "grass", "shelf", "tiny", "squish", "car",
+    "clean", "peekaboo", "buff", "smart", "stack", "strawberry", "magic",
+    "fairy", "blue", "pirate", "yellow", "kiss", "hold", "sit", "bath",
+    "climb", "wow", "look", "dinner", "sleep", "cup", "attack", "lizard",
+    "dj", "hole", "baking", "flower", "skateboard", "million", "hug", "full",
+    "gaming", "middlefinger", "sadgamer", "stare", "rain", "jamming", "cool",
+    "yell", "chill", "a", "singing", "motorcycle", "rose", "peace", "french",
+    "tower", "watermelon", "pumpkin",
+  ];
+
+  let frogClicks = 0;
+  let frogMode = false;
+  let frogBusy = false;
+
+  // Walk the fetchers, then fall back to a local name, and return a URL that
+  // redirects to a real frog image.
+  async function randomFrogURL() {
+    for (const makeURL of FROG_FETCHERS) {
+      const ac = new AbortController();
+      const timer = setTimeout(() => ac.abort(), FROG_TIMEOUT);
+      try {
+        const res = await fetch(makeURL(), {
+          cache: "no-store",
+          signal: ac.signal,
+        });
+        if (!res.ok) continue;
+        const frog = await res.json();
+        // Their API can hand back the placeholder 404 entry, which is not a frog.
+        if (frog && typeof frog.url === "string" && frog.name !== "404") {
+          return frog.url;
+        }
+      } catch {} finally {
+        clearTimeout(timer);
+      }
+    }
+    const name =
+      FROG_NAMES[Math.floor(Math.random() * FROG_NAMES.length)];
+    return "https://frogs.media/api/images/" + name + ".gif";
+  }
+
+  function showFrog() {
+    if (frogBusy) return;
+    frogBusy = true;
+    randomFrogURL()
+      .then((url) => {
+        const probe = new Image();
+        probe.onload = () => {
+          frogMode = true;
+          footerHeadImg.src = url;
+          footerHeadImg.alt = "frog";
+          footerHead.classList.remove("bop");
+          void footerHead.offsetWidth;
+          footerHead.classList.add("bop");
+          frogBusy = false;
+        };
+        probe.onerror = () => {
+          frogBusy = false;
+        };
+        probe.src = url;
+      })
+      .catch(() => {
+        frogBusy = false;
+      });
+  }
+
   let bannerIndex = 0;
   let bannerTimer = 0;
   let currentFile = "data/gameList.json";
@@ -421,7 +504,20 @@
       const bopPreload = new Image();
       bopPreload.src = "imageSources/Iconbop-tight.PNG";
       let bopT = 0;
-      footerHead.addEventListener("click", () => {
+      footerHead.addEventListener("click", (e) => {
+        if (frogMode) {
+          // Already a frog: every further click rolls a new one, and stops
+          // following the #home link so you stay on the page.
+          e.preventDefault();
+          showFrog();
+          return;
+        }
+        frogClicks += 1;
+        if (frogClicks >= 10) {
+          frogClicks = 0;
+          showFrog();
+          return;
+        }
         footerHead.classList.remove("bop");
         void footerHead.offsetWidth;
         footerHeadImg.src = "imageSources/Iconbop-tight.PNG";
