@@ -50,15 +50,15 @@ def parse_goal(page):
     title = clean(m.group(1))
 
     m = re.search(
-        r'class="progress-bar"[^>]*aria-valuenow="([\d.]+)"', page
+        r'<span class="kfds-font-bold">([\d.]+)%\s*</span>'
+        r'\s*<span[^>]*id="profileGoalTotal"',
+        page,
     )
     if m:
         percent = float(m.group(1))
     else:
         m = re.search(
-            r'<span class="kfds-font-bold">([\d.]+)%\s*</span>'
-            r'\s*<span[^>]*id="profileGoalTotal"',
-            page,
+            r'class="progress-bar"[^>]*aria-valuenow="([\d.]+)"', page
         )
         if not m:
             raise ValueError("goal percent not found")
