@@ -164,6 +164,73 @@ body {
   padding: 28px 28px 40px 28px;
 }
 
+/* ---------- work-with-me strip, full width above the card grid ---------- */
+/* hidden for now: remove the hidden attribute in index.html to show it again */
+#hire-card[hidden] { display: none; }
+#hire-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  margin: 0 0 34px;
+  padding: 18px 22px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  background: #2e2e2e;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3), 0 8px 20px rgba(0,0,0,.35);
+  animation: card-in .38s cubic-bezier(.2, .7, .25, 1) backwards;
+  transition: transform .15s ease-out, box-shadow .15s ease-out;
+}
+#hire-card:hover, #hire-card:focus-visible {
+  transform: translateY(-3px);
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.35), 0 14px 28px rgba(0,0,0,.45);
+}
+#hire-card:active { transform: translateY(0); }
+#hire-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+#hire-title {
+  font-size: clamp(24px, 4vw, 33px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+#hire-line {
+  font-size: clamp(15px, 2.1vw, 18px);
+  color: rgba(255,255,255,.72);
+  line-height: 1.25;
+}
+#hire-cta {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff5e5b;
+  color: #282828;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1;
+  padding: 13px 20px;
+  border-radius: 999px;
+  box-shadow: 0 2px 0 rgba(0,0,0,.4);
+  white-space: nowrap;
+  transition: transform .15s ease-out;
+}
+#hire-cta span { transition: transform .15s ease-out; }
+#hire-card:hover #hire-cta span, #hire-card:focus-visible #hire-cta span {
+  transform: translateX(4px);
+}
+
 #grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -489,7 +556,7 @@ body {
 /* logbook paper: cream sheet, slight rotation, ruled lines, tape.
    Rotation/tape/tint are randomized per log via CSS vars set in JS.
    NOTE: the second sheet is a sibling behind (#viewer-sheet-back), NOT a
-   ::after covering #viewer-text — a full-cover ::after with z-index:-1
+   ::after covering #viewer-text: a full-cover ::after with z-index:-1
    paints ABOVE the parent background (parent has transform/isolation) and
    hides the ruled lines. */
 #viewer-paper {
@@ -627,6 +694,11 @@ body {
   min-width: 0;
 }
 #footer-head {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -715,6 +787,14 @@ body {
   #logo { flex-basis: 34%; }
   #content { padding: 18px 14px 30px 14px; }
   #grid { gap: 22px 16px; }
+  #hire-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 16px 16px 18px;
+  }
+  #hire-cta { align-self: stretch; justify-content: center; }
   .card { max-width: none; }
   .new-badge { width: 40px; height: 40px; }
   #bottombar {
@@ -738,6 +818,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .card,
+  #hire-card,
   #viewer,
   .viewer-body,
   #viewer.closing,

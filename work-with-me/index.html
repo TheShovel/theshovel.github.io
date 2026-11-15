@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Work with TheShovel: games, tools and websites, made by a student who loves building things. €10 a day." />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <title>Work with me · TheShovel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* page-only layout, everything else comes from the site stylesheet */
+    .hire-page {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .hire-page .hero,
+    .hire-page .panel,
+    .hire-page #contact {
+      background: #2e2e2e;
+      border: 3px solid #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 0 1px rgba(255,255,255,.3), 0 8px 20px rgba(0,0,0,.35);
+      padding: clamp(20px, 4vw, 30px);
+    }
+    .hire-page h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 6vw, 48px);
+      line-height: 1.05;
+    }
+    .hire-page .hero p {
+      margin: 0;
+      max-width: 56ch;
+      font-size: clamp(16px, 2.2vw, 19px);
+      line-height: 1.4;
+      color: rgba(255,255,255,.82);
+    }
+    .hire-page .hero-exp {
+      margin: 14px 0 0;
+      font-size: clamp(17px, 2.4vw, 20px);
+      line-height: 1.35;
+      color: #fff;
+    }
+    .hire-page .hero-exp strong {
+      color: #ff9e9e;
+      font-size: 1.15em;
+    }
+
+    .hire-page section { margin-top: 44px; }
+    .hire-page h2 {
+      margin: 0 0 6px;
+      font-size: clamp(24px, 4vw, 30px);
+      line-height: 1.15;
+    }
+    .hire-page h2 + .sub {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.35;
+    }
+    .hire-page p { line-height: 1.45; }
+
+    .hire-page .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .hire-page .project {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 16px 18px;
+      background: rgba(0,0,0,.3);
+      border: 2px solid rgba(255,255,255,.85);
+      border-radius: 10px;
+      text-decoration: none;
+      color: #fff;
+      transition: transform .14s ease-out, border-color .14s ease-out, box-shadow .14s ease-out;
+    }
+    .hire-page .project:hover, .hire-page .project:focus-visible {
+      transform: translateY(-3px);
+      border-color: #fff;
+      box-shadow: 0 10px 22px rgba(0,0,0,.4);
+      outline: none;
+    }
+    .hire-page .project h3 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.15;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .hire-page .project h3 .stars {
+      font-size: 13px;
+      font-weight: 400;
+      color: #ff9e9e;
+      white-space: nowrap;
+    }
+    .hire-page .project p {
+      margin: 0;
+      font-size: 15.5px;
+      line-height: 1.35;
+      color: rgba(255,255,255,.78);
+    }
+    .hire-page .project .tags {
+      font-size: 13px;
+      color: rgba(255,255,255,.5);
+    }
+
+    .hire-page .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .hire-page .skills li {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.4);
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 15px;
+    }
+
+    .hire-page .panels {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+    .hire-page .panel-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .hire-page .panel h3 { margin: 0 0 6px; font-size: 21px; }
+    .hire-page .panel p { margin: 0; font-size: 15.5px; color: rgba(255,255,255,.8); }
+    .hire-page .price {
+      display: block;
+      font-size: clamp(30px, 5vw, 38px);
+      font-weight: 700;
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .hire-page .price small {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .hire-page #contact p { margin: 0 0 18px; color: rgba(255,255,255,.82); }
+    .hire-page .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .hire-page .contact-links a,
+    .hire-page .contact-links button {
+      display: inline-flex;
+      cursor: pointer;
+      font-family: inherit;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.1);
+      border: 2px solid rgba(255,255,255,.75);
+      color: #fff;
+      transition: background .14s ease-out, transform .14s ease-out;
+    }
+    .hire-page .contact-links a:hover,
+    .hire-page .contact-links button:hover {
+      background: rgba(255,255,255,.2);
+      transform: translateY(-2px);
+    }
+    .hire-page .contact-links a.primary {
+      background: #ff5e5b;
+      border-color: transparent;
+      color: #282828;
+      box-shadow: 0 2px 0 rgba(0,0,0,.4);
+    }
+
+    .hire-page #thanks {
+      margin-top: 44px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .hire-page #thanks strong { color: #fff; }
+    .hire-page #thanks .heart { color: #ff9e9e; }
+
+    @media (max-width: 640px) {
+      .hire-page .projects, .hire-page .panels { grid-template-columns: 1fr; }
+      .hire-page section { margin-top: 36px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hire-page .project, .hire-page .contact-links a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div id="bg" aria-hidden="true"></div>
+
+  <header id="topbar">
+    <a id="logo" href="../" title="Home">
+      <img id="logo-text" src="../imageSources/LogoText-crop.PNG" alt="THE SHOVEL" />
+    </a>
+    <div id="banner">
+      <button id="banner-prev" aria-label="Previous banner">&lt;</button>
+      <a id="banner-link" href="../updates/rewrittenupdate.html">
+        <img id="banner-img" src="../banner/updatebanner.png" alt="website update" />
+      </a>
+      <button id="banner-next" aria-label="Next banner">&gt;</button>
+      <div id="banner-dots"></div>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="hire-page">
+      <div class="hero">
+        <h1>Want to work with me?</h1>
+        <p>
+          I'm TheShovel (Jodie Cata Niconov), a student from Romania who makes games, tools and strange little
+          programs for the internet. If you have an idea, I'd genuinely love to help you build it.
+        </p>
+        <p class="hero-exp">
+          <strong>Around 6 years</strong> of hands-on experience, building things on GitHub
+          since 2020.
+        </p>
+      </div>
+
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Stuff I've made</h2>
+        <div class="projects">
+          <a class="project" href="https://github.com/TheShovel/irongingot" target="_blank" rel="noopener">
+            <h3>IronGingot <span class="stars">★ 27</span></h3>
+            <p>A minimalist Minecraft server written in C, built for computers with very little memory.</p>
+            <span class="tags">C · game server</span>
+          </a>
+          <a class="project" href="https://github.com/TheShovel/co-funk" target="_blank" rel="noopener">
+            <h3>Co-Funk <span class="stars">★ 19</span></h3>
+            <p>Friday Night Funkin' rewritten for the browser, with working multiplayer.</p>
+            <span class="tags">JavaScript · rhythm game</span>
+          </a>
+          <a class="project" href="https://github.com/TheShovel/MotionSprite" target="_blank" rel="noopener">
+            <h3>MotionSprite <span class="stars">★ 10</span></h3>
+            <p>A motion-animation maker for PenguinMod: keyframes and tweening without writing code.</p>
+            <span class="tags">JavaScript · PenguinMod</span>
+          </a>
+          <a class="project" href="https://github.com/TheShovel/icanhelp" target="_blank" rel="noopener">
+            <h3>icanhelp <span class="stars">★ 4</span></h3>
+            <p>A Linux desktop AI assistant that can actually do things on your machine.</p>
+            <span class="tags">JavaScript · Linux</span>
+          </a>
+          <a class="project" href="https://github.com/TheShovel/khuwari" target="_blank" rel="noopener">
+            <h3>Khuwari <span class="stars">★ 3</span></h3>
+            <p>Animation interpolation with full artistic control. Local-first, ML-assisted, no cloud.</p>
+            <span class="tags">JavaScript · animation</span>
+          </a>
+          <a class="project" href="https://github.com/TheShovel" target="_blank" rel="noopener">
+            <h3>TheShovel <span class="stars">68 repos</span></h3>
+            <p>My junk drawer of experiments: games, obfuscators, extensions, weird web toys.</p>
+            <span class="tags">everything else</span>
+          </a>
+        </div>
+      </section>
+
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">What I can help with</h2>
+        <p class="sub">Games are my thing, but I'm happy to try anything.</p>
+        <ul class="skills">
+          <li>Web games</li>
+          <li>PenguinMod &amp; TurboWarp</li>
+          <li>Game engines</li>
+          <li>Websites</li>
+          <li>Desktop tools</li>
+          <li>Linux stuff</li>
+          <li>Extensions</li>
+          <li>Performance / low-spec focused software</li>
+          <li>Prototypes</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="rate-title">
+        <h2 id="rate-title">Rates &amp; availability</h2>
+        <div class="panels">
+          <div class="panel">
+            <h3>My rate</h3>
+            <span class="price">€10 <small>/ day</small></span>
+            <p>
+              €10 a day is cheap on purpose. This is a side hustle for me, not what I make a
+              living from: I'm in college, and the money goes towards my hobbies and the extra
+              things my parents can't provide while I'm studying.
+            </p>
+            <p>
+              A day is around 4 hours of work. Tell me what you need and I'll give you a
+              rough idea of how many days it'll take before we start, so there are no
+              surprises.
+            </p>
+          </div>
+          <div class="panel-stack">
+            <div class="panel">
+              <h3>Availability</h3>
+              <p>
+                I'm still a student, so I can't be around all the time. School and exams come
+                first. I usually work on projects in the evenings and on weekends, and I'll
+                always tell you honestly how much time I can give you before we begin. I'm on
+                Romania time (Bucharest, UTC+2 in winter and UTC+3 in summer).
+              </p>
+            </div>
+            <div class="panel">
+              <h3>Payment</h3>
+              <p>
+                You pay 50% of the estimated total before I start, and the other 50% when the
+                project is finished. If it takes fewer days than I estimated, I'll take the
+                difference off the final payment. If it takes me longer than estimated, I won't
+                charge you extra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="ai-title">
+        <h2 id="ai-title">My stance on AI</h2>
+        <div class="panel">
+          <p>
+            I sometimes use AI tools while I work. They are not required for me to do my
+            work, but they do speed things up. If a project requires me to not use AI, I'll
+            follow that completely. If you need proof of that, I can provide it too during
+            development of the application.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Let's talk</h2>
+        <p>
+          Email me with what you're making, what you need, and roughly when you need it.
+          I read everything and I'll get back to you as soon as I can.
+        </p>
+        <div class="contact-links">
+          <a class="primary" href="mailto:theshovelcontact@gmail.com">Email me</a>
+          <button type="button" id="copy-discord" data-handle="@theshovel.rocks">
+            Discord: @theshovel.rocks
+          </button>
+        </div>
+      </section>
+
+      <p id="thanks">
+        <strong>Thank you for reading all the way down here.</strong><br />
+        Even if we don't end up working together, thanks for checking out my stuff.
+        It really means a lot. <span class="heart">♥</span>
+      </p>
+    </div>
+  </main>
+
+  <footer id="bottombar">
+    <div id="footer-left">
+      <button type="button" id="footer-head" aria-label="Bopping head">
+        <img id="footer-head-img" src="../imageSources/Icon-tight.PNG" alt="bopping head" />
+      </button>
+      <div id="footer-links">
+        <nav id="site-links">
+          <a href="../credits/">credits</a>
+          <span>·</span>
+          <a href="../privacy-policy/">privacy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Footer head: bop on click, no navigation. Same as the main site.
+    (() => {
+      const head = document.getElementById("footer-head");
+      const headImg = document.getElementById("footer-head-img");
+      if (!head || !headImg) return;
+      const idle = "../imageSources/Icon-tight.PNG";
+      const bop = "../imageSources/Iconbop-tight.PNG";
+      const pre = new Image();
+      pre.src = bop;
+      let timer = 0;
+      head.addEventListener("click", () => {
+        head.classList.remove("bop");
+        void head.offsetWidth;
+        headImg.src = bop;
+        head.classList.add("bop");
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          headImg.src = idle;
+        }, 400);
+      });
+    })();
+
+    // Discord handle button: copy it to the clipboard so it is easy to add.
+    (() => {
+      const btn = document.getElementById("copy-discord");
+      if (!btn) return;
+      const handle = btn.dataset.handle;
+      const label = "Discord: " + handle;
+      let timer = 0;
+      btn.addEventListener("click", async () => {
+        let copied = false;
+        try {
+          await navigator.clipboard.writeText(handle);
+          copied = true;
+        } catch {
+          const tmp = document.createElement("textarea");
+          tmp.value = handle;
+          tmp.setAttribute("readonly", "");
+          tmp.style.position = "fixed";
+          tmp.style.opacity = "0";
+          document.body.appendChild(tmp);
+          tmp.select();
+          try { copied = document.execCommand("copy"); } catch {}
+          tmp.remove();
+        }
+        // Lock the current width so the label swap does not resize the button.
+        btn.style.width = btn.offsetWidth + "px";
+        btn.textContent = copied ? "Copied!" : handle;
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          btn.textContent = label;
+          btn.style.width = "";
+        }, 1600);
+      });
+    })();
+
+    // Same banner behaviour as app.js, with paths relative to this subpage.
+    (() => {
+      const img = document.getElementById("banner-img");
+      const link = document.getElementById("banner-link");
+      const prev = document.getElementById("banner-prev");
+      const next = document.getElementById("banner-next");
+      const dots = document.getElementById("banner-dots");
+      const SITE = "../";
+      let banners = [], index = 0, timer = 0;
+
+      const siteURL = (p) => (/^https?:/i.test(p) ? p : SITE + p);
+
+      function render() {
+        const b = banners[index % banners.length];
+        img.src = SITE + "banner/" + b.tex;
+        img.alt = b.tex;
+        link.href = siteURL(b.link);
+        link.target = /^https?:/i.test(b.link) ? "_blank" : "_self";
+        link.rel = /^https?:/i.test(b.link) ? "noopener" : "";
+        dots.innerHTML = "";
+        dots.style.display = banners.length > 1 ? "" : "none";
+        banners.forEach((_, i) => {
+          const d = document.createElement("i");
+          if (i === index % banners.length) d.className = "on";
+          dots.appendChild(d);
+        });
+      }
+      function step(dir) {
+        index = (index + dir + banners.length * 100) % banners.length;
+        render();
+        start();
+      }
+      function start() {
+        clearInterval(timer);
+        timer = setInterval(() => {
+          index = (index + 1) % banners.length;
+          render();
+        }, 8000);
+      }
+
+      prev.addEventListener("click", () => step(-1));
+      next.addEventListener("click", () => step(1));
+
+      fetch(SITE + "banner/banners.json", { cache: "no-cache" })
+        .then((r) => (r.ok ? r.json() : null))
+        .then((b) => {
+          if (Array.isArray(b) && b.length) banners = b;
+          else banners = [{ tex: "updatebanner.png", link: "updates/bannerupdate.html" }];
+          render();
+          start();
+        })
+        .catch(() => {
+          banners = [{ tex: "updatebanner.png", link: "updates/bannerupdate.html" }];
+          render();
+          start();
+        });
+    })();
+  </script>
+</body>
+</html>

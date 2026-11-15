@@ -56,6 +56,12 @@
     "mobile": true,
     "staticThumb": true
   },
+    {
+    "id": "aliengame",
+    "link": "https://theshovel.rocks/alien-falls-off-a-planet-and-it-needs-to-go-back-by-bouncing-of-stuff-the-game/",
+    "mobile": true,
+    "staticThumb": true
+  },
   {
     "id": "garden",
     "link": "https://theshovel.rocks/the-garden/",

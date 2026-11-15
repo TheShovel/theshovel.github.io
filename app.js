@@ -506,8 +506,7 @@
       let bopT = 0;
       footerHead.addEventListener("click", (e) => {
         if (frogMode) {
-          // Already a frog: every further click rolls a new one, and stops
-          // following the #home link so you stay on the page.
+          // Already a frog: every further click rolls a new one.
           e.preventDefault();
           showFrog();
           return;
