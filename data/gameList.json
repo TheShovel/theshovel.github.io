@@ -32,6 +32,12 @@
     "staticThumb": true,
     "mobile": true
   },
+    {
+    "id": "discord",
+    "link": "https://discord.gg/3FxRDuGyju",
+    "mobile": true,
+    "staticThumb": true
+  },
   {
     "id": "irongingot",
     "link": "https://theshovel.rocks/irongingot/",

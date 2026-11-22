@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Work with TheShovel: games, tools and websites, made by a student who loves building things. €10 a day." />
+  <meta name="description" content="Portfolio of TheShovel: games, tools and websites, made by a student who loves building things. Open for hire." />
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-  <title>Work with me · TheShovel</title>
+  <title>Portfolio · TheShovel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -52,6 +52,38 @@
     .hire-page .hero-exp strong {
       color: #ff9e9e;
       font-size: 1.15em;
+    }
+    .hire-page .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .hire-page .hero-cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.1);
+      border: 2px solid rgba(255,255,255,.75);
+      color: #fff;
+      transition: background .14s ease-out, transform .14s ease-out;
+    }
+    .hire-page .hero-cta a:hover,
+    .hire-page .hero-cta a:focus-visible {
+      background: rgba(255,255,255,.2);
+      transform: translateY(-2px);
+      outline: none;
+    }
+    .hire-page .hero-cta a.primary {
+      background: #ff5e5b;
+      border-color: transparent;
+      color: #282828;
+      box-shadow: 0 2px 0 rgba(0,0,0,.4);
     }
 
     .hire-page section { margin-top: 44px; }
@@ -117,6 +149,94 @@
       color: rgba(255,255,255,.5);
     }
 
+    .hire-page .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .hire-page .game {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 12px;
+      background: rgba(0,0,0,.3);
+      border: 2px solid rgba(255,255,255,.85);
+      border-radius: 10px;
+      text-decoration: none;
+      color: #fff;
+      transition: transform .14s ease-out, border-color .14s ease-out, box-shadow .14s ease-out;
+    }
+    .hire-page .game:hover, .hire-page .game:focus-visible {
+      transform: translateY(-3px);
+      border-color: #fff;
+      box-shadow: 0 10px 22px rgba(0,0,0,.4);
+      outline: none;
+    }
+    .hire-page .game img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 245 / 185;
+      object-fit: cover;
+      border: 3px solid #fff;
+      border-radius: 4px;
+      background: #111;
+    }
+    .hire-page .game-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .hire-page .game-info strong { font-size: 17px; line-height: 1.2; }
+    .hire-page .game-info span {
+      font-size: 13px;
+      line-height: 1.3;
+      color: rgba(255,255,255,.6);
+    }
+
+    .hire-page .certs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .hire-page .cert {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 12px;
+      background: rgba(0,0,0,.3);
+      border: 2px solid rgba(255,255,255,.85);
+      border-radius: 10px;
+      text-decoration: none;
+      color: #fff;
+      transition: transform .14s ease-out, border-color .14s ease-out, box-shadow .14s ease-out;
+    }
+    .hire-page .cert:hover, .hire-page .cert:focus-visible {
+      transform: translateY(-3px);
+      border-color: #fff;
+      box-shadow: 0 10px 22px rgba(0,0,0,.4);
+      outline: none;
+    }
+    .hire-page .cert img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 3px solid #fff;
+      border-radius: 4px;
+      background: #111;
+    }
+    .hire-page .cert-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .hire-page .cert-info strong { font-size: 17px; line-height: 1.2; }
+    .hire-page .cert-info span {
+      font-size: 14px;
+      line-height: 1.3;
+      color: rgba(255,255,255,.6);
+    }
+
     .hire-page .skills {
       display: flex;
       flex-wrap: wrap;
@@ -133,32 +253,10 @@
       font-size: 15px;
     }
 
-    .hire-page .panels {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      align-items: stretch;
-    }
-    .hire-page .panel-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
     .hire-page .panel h3 { margin: 0 0 6px; font-size: 21px; }
     .hire-page .panel p { margin: 0; font-size: 15.5px; color: rgba(255,255,255,.8); }
-    .hire-page .price {
-      display: block;
-      font-size: clamp(30px, 5vw, 38px);
-      font-weight: 700;
-      line-height: 1.1;
-      color: #fff;
-      margin-bottom: 4px;
-    }
-    .hire-page .price small {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--muted);
-    }
+    .hire-page .panel p + p { margin-top: 10px; }
+    .hire-page .panel a { color: #ff9e9e; font-weight: 700; }
 
     .hire-page #contact p { margin: 0 0 18px; color: rgba(255,255,255,.82); }
     .hire-page .contact-links {
@@ -166,8 +264,7 @@
       flex-wrap: wrap;
       gap: 10px;
     }
-    .hire-page .contact-links a,
-    .hire-page .contact-links button {
+    .hire-page .contact-links a {
       display: inline-flex;
       cursor: pointer;
       font-family: inherit;
@@ -183,8 +280,7 @@
       color: #fff;
       transition: background .14s ease-out, transform .14s ease-out;
     }
-    .hire-page .contact-links a:hover,
-    .hire-page .contact-links button:hover {
+    .hire-page .contact-links a:hover {
       background: rgba(255,255,255,.2);
       transform: translateY(-2px);
     }
@@ -206,12 +302,16 @@
     .hire-page #thanks .heart { color: #ff9e9e; }
 
     @media (max-width: 640px) {
-      .hire-page .projects, .hire-page .panels { grid-template-columns: 1fr; }
+      .hire-page .projects { grid-template-columns: 1fr; }
       .hire-page section { margin-top: 36px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .hire-page .project, .hire-page .contact-links a { transition: none; }
+      .hire-page .project,
+      .hire-page .game,
+      .hire-page .cert,
+      .hire-page .hero-cta a,
+      .hire-page .contact-links a { transition: none; }
     }
   </style>
 </head>
@@ -235,19 +335,23 @@
   <main id="content">
     <div class="hire-page">
       <div class="hero">
-        <h1>Want to work with me?</h1>
+        <h1>Hi, I'm TheShovel.</h1>
         <p>
-          I'm TheShovel (Jodie Cata Niconov), a student from Romania who makes games, tools and strange little
-          programs for the internet. If you have an idea, I'd genuinely love to help you build it.
+          I'm a student from Romania who makes games, tools and strange little programs for the
+          internet. This is a small portfolio of the work I'm proudest of.
         </p>
         <p class="hero-exp">
           <strong>Around 6 years</strong> of hands-on experience, building things on GitHub
           since 2020.
         </p>
+        <div class="hero-cta">
+          <a class="primary" href="#contact">Hire me</a>
+        </div>
       </div>
 
-      <section aria-labelledby="projects-title">
-        <h2 id="projects-title">Stuff I've made</h2>
+      <section id="work" aria-labelledby="work-title">
+        <h2 id="work-title">Selected work</h2>
+        <p class="sub">A few projects I built and still like. The rest is on GitHub.</p>
         <div class="projects">
           <a class="project" href="https://github.com/TheShovel/irongingot" target="_blank" rel="noopener">
             <h3>IronGingot <span class="stars">★ 27</span></h3>
@@ -282,8 +386,67 @@
         </div>
       </section>
 
+      <section id="games" aria-labelledby="games-title">
+        <h2 id="games-title">Released games</h2>
+        <p class="sub">Games I released myself or contributed to that are now on the market. Click one to check it out.</p>
+        <div class="games">
+          <a class="game" href="https://play.google.com/store/apps/details?id=rocks.theshovel.bees" target="_blank" rel="noopener">
+            <img src="../data/beesmedium.png" alt="Bees!! game cover" loading="lazy" />
+            <span class="game-info">
+              <strong>Bees!!</strong>
+              <span>Android · Google Play</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section id="open-source" aria-labelledby="open-source-title">
+        <h2 id="open-source-title">Open source projects I contributed to</h2>
+        <p class="sub">Some of my code ended up in here.</p>
+        <div class="projects">
+          <a class="project" href="https://github.com/PenguinMod" target="_blank" rel="noopener">
+            <h3>PenguinMod</h3>
+            <p>The modded Scratch editor I build extensions and tools for.</p>
+            <span class="tags">github.com/PenguinMod</span>
+          </a>
+          <a class="project" href="https://github.com/TurboWarp/extensions" target="_blank" rel="noopener">
+            <h3>TurboWarp Extensions</h3>
+            <p>The extension gallery for TurboWarp, the Scratch mod focused on speed.</p>
+            <span class="tags">github.com/TurboWarp/extensions</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="certificates" aria-labelledby="certificates-title">
+        <h2 id="certificates-title">Certificates &amp; achievements</h2>
+        <p class="sub">A few things I've earned along the way. Click any one to see it full size.</p>
+        <div class="certs">
+          <a class="cert" href="../data/certificates/stardance.png" target="_blank" rel="noopener">
+            <img src="../data/certificates/stardancemedium.png" alt="Hack Club Stardance Challenge certificate of achievement" loading="lazy" />
+            <span class="cert-info">
+              <strong>Hack Club Stardance</strong>
+              <span>Certificate of achievement for shipping 5 projects and 236 hours of work</span>
+            </span>
+          </a>
+          <a class="cert" href="../data/certificates/haven.png" target="_blank" rel="noopener">
+            <img src="../data/certificates/havenmedium.png" alt="Hack Club Haven third prize diploma of merit" loading="lazy" />
+            <span class="cert-info">
+              <strong>Hack Club Haven, Bra&#537;ov</strong>
+              <span>3rd prize and diploma of merit, November 2026, for making a full small game in 24 hours with no AI</span>
+            </span>
+          </a>
+          <a class="cert" href="../data/certificates/cambridge.png" target="_blank" rel="noopener">
+            <img src="../data/certificates/cambridgemedium.png" alt="Cambridge English Preliminary certificate, grade A" loading="lazy" />
+            <span class="cert-info">
+              <strong>Cambridge English Preliminary</strong>
+              <span>Grade A, B2 level, November 2022</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
       <section aria-labelledby="skills-title">
-        <h2 id="skills-title">What I can help with</h2>
+        <h2 id="skills-title">What I build</h2>
         <p class="sub">Games are my thing, but I'm happy to try anything.</p>
         <ul class="skills">
           <li>Web games</li>
@@ -298,150 +461,76 @@
         </ul>
       </section>
 
-      <section aria-labelledby="rate-title">
-        <h2 id="rate-title">Rates &amp; availability</h2>
-        <div class="panels">
-          <div class="panel">
-            <h3>My rate</h3>
-            <span class="price">€10 <small>/ day</small></span>
-            <p>
-              €10 a day is cheap on purpose. This is a side hustle for me, not what I make a
-              living from: I'm in college, and the money goes towards my hobbies and the extra
-              things my parents can't provide while I'm studying.
-            </p>
-            <p>
-              A day is around 4 hours of work. Tell me what you need and I'll give you a
-              rough idea of how many days it'll take before we start, so there are no
-              surprises.
-            </p>
-          </div>
-          <div class="panel-stack">
-            <div class="panel">
-              <h3>Availability</h3>
-              <p>
-                I'm still a student, so I can't be around all the time. School and exams come
-                first. I usually work on projects in the evenings and on weekends, and I'll
-                always tell you honestly how much time I can give you before we begin. I'm on
-                Romania time (Bucharest, UTC+2 in winter and UTC+3 in summer).
-              </p>
-            </div>
-            <div class="panel">
-              <h3>Payment</h3>
-              <p>
-                You pay 50% of the estimated total before I start, and the other 50% when the
-                project is finished. If it takes fewer days than I estimated, I'll take the
-                difference off the final payment. If it takes me longer than estimated, I won't
-                charge you extra.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="ai-title">
-        <h2 id="ai-title">My stance on AI</h2>
+      <section aria-labelledby="about-title">
+        <h2 id="about-title">A bit about me</h2>
         <div class="panel">
           <p>
-            I sometimes use AI tools while I work. They are not required for me to do my
-            work, but they do speed things up. If a project requires me to not use AI, I'll
-            follow that completely. If you need proof of that, I can provide it too during
-            development of the application.
+            I've been making things on GitHub since 2020, and most of what I know comes from
+            starting projects that were probably too ambitious and finishing the ones that
+            weren't. Games, game servers, editor tools and the occasional strange web toy.
+          </p>
+          <p>
+            I'm still a student, so I'm honest about how much time I can give a project. I'm
+            based in Romania (Bucharest time) and I'm happy to work remotely.
+          </p>
+          <p>
+            If you'd rather watch than read, my
+            <a href="https://www.youtube.com/@theshoveldev" target="_blank" rel="noopener">YouTube channel</a>
+            is a good resource: I talk about what I do, the things I build and how I work,
+            plus some silly stuff too.
           </p>
         </div>
       </section>
 
       <section id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Let's talk</h2>
+        <h2 id="contact-title">Open for hire</h2>
         <p>
-          Email me with what you're making, what you need, and roughly when you need it.
-          I read everything and I'll get back to you as soon as I can.
+          I'm open for hire. If you like what you see and have something you'd like built,
+          email me with what you have in mind and roughly when you need it. I read everything
+          and I'll get back to you as soon as I can.
         </p>
         <div class="contact-links">
           <a class="primary" href="mailto:theshovelcontact@gmail.com">Email me</a>
-          <button type="button" id="copy-discord" data-handle="@theshovel.rocks">
-            Discord: @theshovel.rocks
-          </button>
         </div>
       </section>
 
       <p id="thanks">
-        <strong>Thank you for reading all the way down here.</strong><br />
+        <strong>Thanks for looking through my work.</strong><br />
         Even if we don't end up working together, thanks for checking out my stuff.
         It really means a lot. <span class="heart">♥</span>
       </p>
     </div>
   </main>
 
-  <footer id="bottombar">
-    <div id="footer-left">
-      <button type="button" id="footer-head" aria-label="Bopping head">
-        <img id="footer-head-img" src="../imageSources/Icon-tight.PNG" alt="bopping head" />
-      </button>
-      <div id="footer-links">
-        <nav id="site-links">
-          <a href="../credits/">credits</a>
-          <span>·</span>
-          <a href="../privacy-policy/">privacy</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
-
   <script>
-    // Footer head: bop on click, no navigation. Same as the main site.
+    // Background parallax: same drift as the main page (scroll-linked, tiled #bg).
     (() => {
-      const head = document.getElementById("footer-head");
-      const headImg = document.getElementById("footer-head-img");
-      if (!head || !headImg) return;
-      const idle = "../imageSources/Icon-tight.PNG";
-      const bop = "../imageSources/Iconbop-tight.PNG";
-      const pre = new Image();
-      pre.src = bop;
-      let timer = 0;
-      head.addEventListener("click", () => {
-        head.classList.remove("bop");
-        void head.offsetWidth;
-        headImg.src = bop;
-        head.classList.add("bop");
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-          headImg.src = idle;
-        }, 400);
-      });
-    })();
-
-    // Discord handle button: copy it to the clipboard so it is easy to add.
-    (() => {
-      const btn = document.getElementById("copy-discord");
-      if (!btn) return;
-      const handle = btn.dataset.handle;
-      const label = "Discord: " + handle;
-      let timer = 0;
-      btn.addEventListener("click", async () => {
-        let copied = false;
-        try {
-          await navigator.clipboard.writeText(handle);
-          copied = true;
-        } catch {
-          const tmp = document.createElement("textarea");
-          tmp.value = handle;
-          tmp.setAttribute("readonly", "");
-          tmp.style.position = "fixed";
-          tmp.style.opacity = "0";
-          document.body.appendChild(tmp);
-          tmp.select();
-          try { copied = document.execCommand("copy"); } catch {}
-          tmp.remove();
+      const bg = document.getElementById("bg");
+      if (!bg) return;
+      const FACTOR = 0.35;
+      const TILE = 420; // must match background-size in styles.css
+      let ticking = false;
+      function update() {
+        ticking = false;
+        if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ) {
+          bg.style.backgroundPosition = "";
+          return;
         }
-        // Lock the current width so the label swap does not resize the button.
-        btn.style.width = btn.offsetWidth + "px";
-        btn.textContent = copied ? "Copied!" : handle;
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-          btn.textContent = label;
-          btn.style.width = "";
-        }, 1600);
-      });
+        const y = window.scrollY || 0;
+        const off = -((y * FACTOR) % TILE);
+        bg.style.backgroundPosition = "0px " + off + "px";
+      }
+      function request() {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+      window.addEventListener("scroll", request, { passive: true });
+      window.addEventListener("resize", request);
+      update();
     })();
 
     // Same banner behaviour as app.js, with paths relative to this subpage.
@@ -491,12 +580,12 @@
         .then((r) => (r.ok ? r.json() : null))
         .then((b) => {
           if (Array.isArray(b) && b.length) banners = b;
-          else banners = [{ tex: "updatebanner.png", link: "updates/bannerupdate.html" }];
+          else banners = [{ tex: "updatebanner.png", link: "updates/portfolioUpdate.html" }];
           render();
           start();
         })
         .catch(() => {
-          banners = [{ tex: "updatebanner.png", link: "updates/bannerupdate.html" }];
+          banners = [{ tex: "updatebanner.png", link: "updates/portfolioUpdate.html" }];
           render();
           start();
         });
